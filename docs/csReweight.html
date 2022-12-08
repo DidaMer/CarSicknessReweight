@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-0.9.378">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dida Merrick, Guerraz Michel, Barraud Pierre-Alain, Cian Corinne">
+<meta name="dcterms.date" content="2022-12-07">
+
+<title>Suboptimal sensory reweighting in car sick individuals: a postural study</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+q { quotes: "“" "”" "‘" "’"; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<script src="csReweight_files/libs/clipboard/clipboard.min.js"></script>
+<script src="csReweight_files/libs/quarto-html/quarto.js"></script>
+<script src="csReweight_files/libs/quarto-html/popper.min.js"></script>
+<script src="csReweight_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="csReweight_files/libs/quarto-html/anchor.min.js"></script>
+<link href="csReweight_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link class="quarto-color-scheme" id="quarto-text-highlighting-styles" href="csReweight_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+<link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" id="quarto-text-highlighting-styles" href="csReweight_files/libs/quarto-html/quarto-syntax-highlighting-dark.css">
+<script src="csReweight_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="csReweight_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link class="quarto-color-scheme" href="csReweight_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link class="quarto-color-scheme quarto-color-alternate" rel="prefetch" href="csReweight_files/libs/bootstrap/bootstrap-dark.min.css">
+
+<link href="csReweight_files\libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="csReweight_files\libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#environment-initialization" id="toc-environment-initialization" class="nav-link active" data-scroll-target="#environment-initialization">Environment initialization</a></li>
+  <li><a href="#data-setup" id="toc-data-setup" class="nav-link" data-scroll-target="#data-setup">Data setup</a></li>
+  <li><a href="#calculating-psds-sequences-spectra" id="toc-calculating-psds-sequences-spectra" class="nav-link" data-scroll-target="#calculating-psds-sequences-spectra">Calculating PSDs sequences (spectra)</a></li>
+  <li><a href="#computing-energy-ratios" id="toc-computing-energy-ratios" class="nav-link" data-scroll-target="#computing-energy-ratios">Computing Energy Ratios</a></li>
+  <li><a href="#car-sickness-quartiles-computation" id="toc-car-sickness-quartiles-computation" class="nav-link" data-scroll-target="#car-sickness-quartiles-computation">Car sickness quartiles computation</a></li>
+  <li><a href="#saving-and-displaying-the-final-dataframe" id="toc-saving-and-displaying-the-final-dataframe" class="nav-link" data-scroll-target="#saving-and-displaying-the-final-dataframe">Saving and displaying the final dataframe</a></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Suboptimal sensory reweighting in car sick individuals: a postural study</h1>
+</div>
+
+
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dida Merrick, Guerraz Michel, Barraud Pierre-Alain, Cian Corinne </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 7, 2022</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<section id="environment-initialization" class="level2">
+<h2 class="anchored" data-anchor-id="environment-initialization">Environment initialization</h2>
+<p>Specifying the paths for the <strong>data</strong> and <strong>scripts</strong> directories :</p>
+<p>The data directory hosts the <em>.brute</em> files generated by our posturography platform.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+.brute files store the posturography data fo each trial performed by each participants
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The first part of the name of each files (i.e.&nbsp;s046) corresponds to the identification number of each participant.</p>
+<p>The second part of the name corresponds to the number of the trial. Respectively cd1, cd2 and cd3 for the first, second and third trials.</p>
+<p>The first column of these files (<q>temps</q>) is the timestamp of each measure (every 10 ms during 180s).</p>
+<p>The second column <q>Consigne</q> correspond to the angle the platform must output to maintain sway-reference.</p>
+<p>The third column <q>Angle</q> corresponds of the current angle of the platform in space in the anteroposterior axis.</p>
+<p>The four following columns (<q>Capteur (Kg) (Nord Ouest)</q>, <q>Capteur (Kg) (Nord Est)</q>, <q>Capteur (Kg) (Sud Est)</q>, <q>Capteur (Kg) (Sud Ouest)</q>), account for the force sensed on each of the four cardinally placed force sensors in Kg.</p>
+<p>From these forces, the last two columns were computed to represent the Barycenter in mm (respectively on the x and y axis) of the participant on the plate.</p>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data_dir <span class="ot">&lt;-</span> <span class="fu">file.path</span>(<span class="fu">getwd</span>(), <span class="st">"data"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>scripts_dir <span class="ot">&lt;-</span> <span class="fu">file.path</span>(<span class="fu">getwd</span>(), <span class="st">"scripts"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Source the <strong>load-packages</strong> script and load/install (if necessary) needed <strong>packages</strong> :</p>
+<div class="cell">
+
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Specify the packages needed for the project</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>pkgs <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"tidyverse"</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>          <span class="st">"psych"</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>          <span class="st">"signal"</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>          <span class="st">"psd"</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>          <span class="st">"tools"</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>          <span class="st">"viridis"</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>          <span class="st">"rmarkdown"</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>          <span class="st">"writexl"</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the packages and install them if necessary</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="fu">lpkg</span>(pkgs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tidyverse     psych    signal       psd     tools   viridis rmarkdown   writexl 
+     TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE      TRUE </code></pre>
+</div>
+</div>
+</section>
+<section id="data-setup" class="level2">
+<h2 class="anchored" data-anchor-id="data-setup">Data setup</h2>
+<p><strong>Loading</strong> the questionnaire <strong>data</strong> and compute the car-sickness score.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>subj_quest <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">file.path</span>(data_dir, <span class="st">"subj_quest.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>subj_quest <span class="ot">&lt;-</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  subj_quest <span class="sc">%&gt;%</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">CarSick =</span> <span class="fu">replace_na</span>(CarMoun <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>                                CarStraigh <span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>                                CarFront <span class="sc">+</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>                                CarBack <span class="sc">+</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>                                CarRead, <span class="dv">0</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Setting-up signal parameters :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sampling frequency (in Hz)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>samp_freq <span class="ot">&lt;-</span> <span class="dv">100</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Duration of each phase (static/sway-ref/static, in sec)</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>phase_dur <span class="ot">&lt;-</span> <span class="dv">60</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Minimum and maximum frequencies of the spectral analysis</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>min_freq <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>max_freq <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co"># FFT window duration (in sec)</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>window_dur <span class="ot">&lt;-</span> <span class="dv">10</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Decimation ratio (not used since reasonable compute time)</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>dratio <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Rotation function for future plots</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>rotate <span class="ot">&lt;-</span> <span class="cf">function</span>(x) <span class="fu">t</span>(<span class="fu">apply</span>(x, <span class="dv">2</span>, rev))</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Normalization function for the spectra</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>sp_norm <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    x <span class="sc">/</span> <span class="fu">max</span>(x)</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of samples in the analysis</span></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>nb_samp <span class="ot">&lt;-</span> <span class="fu">floor</span>(<span class="dv">3</span> <span class="sc">*</span> phase_dur <span class="sc">*</span> samp_freq)</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Width of the FFT analysis window</span></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>window_size <span class="ot">&lt;-</span> <span class="fu">round</span>(window_dur <span class="sc">*</span> samp_freq)</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Window profile</span></span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>window <span class="ot">&lt;-</span> <span class="fu">hamming</span>(window_size)</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Initial and final sample indices</span></span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>initial_idx <span class="ot">&lt;-</span> <span class="fu">max</span>(<span class="fu">c</span>(</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1</span>, <span class="fu">floor</span>(window_size <span class="sc">*</span> min_freq <span class="sc">/</span> samp_freq)))</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>final_idx <span class="ot">&lt;-</span> <span class="fu">floor</span>(window_size <span class="sc">*</span> max_freq <span class="sc">/</span> samp_freq)</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a><span class="co"># Number of steps for FFT analysis</span></span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>nb_step <span class="ot">&lt;-</span> nb_samp <span class="sc">-</span> window_size</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Initialization of the spectra storage :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Temporary matrix for storing the spectra</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>spectra <span class="ot">&lt;-</span> <span class="fu">matrix</span>(</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="cn">NA</span>, <span class="at">nrow =</span> nb_step<span class="sc">/</span>dratio, <span class="at">ncol =</span> final_idx <span class="sc">-</span> initial_idx <span class="sc">+</span> <span class="dv">1</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># List for the storing of results</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>rspec <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>rsptat <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>datastat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">subject =</span> <span class="fu">character</span>(),</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">condition =</span> <span class="fu">character</span>(),</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">er1 =</span> <span class="fu">numeric</span>(),</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">er2 =</span> <span class="fu">numeric</span>(),</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">er3 =</span> <span class="fu">numeric</span>(),</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">er4 =</span> <span class="fu">numeric</span>(),</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">er5 =</span> <span class="fu">numeric</span>(),</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">er2_er1 =</span> <span class="fu">numeric</span>(),</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">er4_er3 =</span> <span class="fu">numeric</span>(),</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">carsick =</span> <span class="fu">numeric</span>(),</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">age =</span> <span class="fu">numeric</span>(),</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">sexe =</span> <span class="fu">character</span>(),</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">height =</span> <span class="fu">numeric</span>(),</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">weight =</span> <span class="fu">numeric</span>(),</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">validity =</span> <span class="fu">numeric</span>())</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    cond <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"cd1"</span>, <span class="st">"cd2"</span>, <span class="st">"cd3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Extracting participants weights from the COP files :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>weightlist <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a> <span class="co"># Looping through the subjects brute data and extracting weights :</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (s <span class="cf">in</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="fu">nrow</span>(subj_quest))) {</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a> subject <span class="ot">&lt;-</span> subj_quest<span class="sc">$</span>Id[s]</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    filename <span class="ot">&lt;-</span> <span class="fu">paste0</span>(</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">file_path_sans_ext</span>(<span class="fu">as.character</span>(subject)),</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>                                            <span class="st">"-"</span>,</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>                                          <span class="st">"cd1"</span>,</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">".brute"</span>)</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>   weightdf <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="fu">file.path</span>(data_dir, filename),</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>                          <span class="at">sep =</span> <span class="st">"</span><span class="sc">\t</span><span class="st">"</span>,</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>                          <span class="at">skip =</span> <span class="dv">1</span>, <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>   weight <span class="ot">&lt;-</span> weightdf[<span class="dv">1</span>,<span class="dv">4</span>]<span class="sc">+</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>             weightdf[<span class="dv">1</span>,<span class="dv">5</span>]<span class="sc">+</span></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>             weightdf[<span class="dv">1</span>,<span class="dv">6</span>]<span class="sc">+</span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>             weightdf[<span class="dv">1</span>,<span class="dv">7</span>]</span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>   weightlist [subject] <span class="ot">&lt;-</span> weight</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a> }</span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="co">#Creating a dataframe with weights and subj Id</span></span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>weightdf <span class="ot">&lt;-</span>  <span class="fu">as.data.frame</span>(<span class="fu">do.call</span>(rbind,weightlist))</span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>weightdf <span class="ot">&lt;-</span> <span class="fu">rownames_to_column</span>(weightdf, <span class="at">var=</span><span class="st">"Id"</span>)</span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(weightdf)[<span class="dv">1</span>]<span class="ot">=</span><span class="st">"Id"</span></span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(weightdf)[<span class="dv">2</span>]<span class="ot">=</span><span class="st">"weight"</span></span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>subj_quest <span class="ot">&lt;-</span> <span class="fu">merge</span>(subj_quest,weightdf,<span class="at">by=</span><span class="st">"Id"</span>)</span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a><span class="co">#Remove Invalid participans</span></span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>subj_quest <span class="ot">&lt;-</span> subj_quest[subj_quest<span class="sc">$</span>isvalid <span class="sc">!=</span> <span class="dv">0</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="calculating-psds-sequences-spectra" class="level2">
+<h2 class="anchored" data-anchor-id="calculating-psds-sequences-spectra">Calculating PSDs sequences (spectra)</h2>
+<p>Since the spectra for each trial and each participant is relatively long to compute, they are saved in a <em>rspec.dat</em> in the data directory. For future runs this file will be used, if present, instead of computing the spectra again.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check if the rspec is already available in the directory</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co">#and if not, compute it</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(<span class="fu">file.path</span>(data_dir, <span class="st">"rspec.dat"</span>))) {</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">load</span>(<span class="fu">file.path</span>(data_dir, <span class="st">"rspec.dat"</span>))</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">"rspec.dat already exists, loading it from save..."</span>,</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">quote =</span> F)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Looping through the subjects</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (s <span class="cf">in</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="fu">nrow</span>(subj_quest)))</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    { <span class="co"># Loop through the subjects :</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the subject id</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>      subject <span class="ot">&lt;-</span> subj_quest<span class="sc">$</span>Id[s]</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check the validity of each trial for this subject</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>      valid1 <span class="ot">&lt;-</span> subj_quest<span class="sc">$</span>valid1[subj_quest<span class="sc">$</span>Id <span class="sc">==</span> subject] <span class="sc">==</span> <span class="dv">1</span>    </span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>      valid2 <span class="ot">&lt;-</span> subj_quest<span class="sc">$</span>valid2[subj_quest<span class="sc">$</span>Id <span class="sc">==</span> subject] <span class="sc">==</span> <span class="dv">1</span></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>      valid3 <span class="ot">&lt;-</span> subj_quest<span class="sc">$</span>valid3[subj_quest<span class="sc">$</span>Id <span class="sc">==</span> subject] <span class="sc">==</span> <span class="dv">1</span></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Creating vector mask for validity</span></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>      vvec <span class="ot">&lt;-</span> <span class="fu">c</span>(valid1, valid2, valid3)</span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Applying the mask to the trials vector   </span></span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>      trials <span class="ot">&lt;-</span> cond[<span class="sc">!!</span>vvec]</span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>      <span class="cf">for</span> (j <span class="cf">in</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="fu">length</span>(trials))) { <span class="co"># Loop through the trials :</span></span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Get the conditions</span></span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a>      trial <span class="ot">&lt;-</span> trials[j]</span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a>      perct <span class="ot">&lt;-</span> <span class="fu">round</span>(((s<span class="sc">/</span><span class="fu">nrow</span>(subj_quest))<span class="sc">*</span><span class="dv">100</span>),<span class="dv">2</span>)</span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>      filename <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="fu">file_path_sans_ext</span>(</span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a>        <span class="fu">as.character</span>(subject))</span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>        , <span class="st">"-"</span>, trial,<span class="st">".brute"</span>)</span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a>        <span class="fu">cat</span>(<span class="fu">paste0</span>(</span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>          <span class="st">"</span><span class="sc">\r</span><span class="st">"</span>, <span class="st">" Computing the spectra for the file : "</span>,</span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a>          filename,</span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>          <span class="st">"  ( "</span>,</span>
+<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a>          perct,</span>
+<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a>          <span class="st">"% finished )"</span>))</span>
+<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Get the posturography data</span></span>
+<span id="cb10-47"><a href="#cb10-47" aria-hidden="true" tabindex="-1"></a>      data <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="fu">file.path</span>(data_dir, filename),</span>
+<span id="cb10-48"><a href="#cb10-48" aria-hidden="true" tabindex="-1"></a>                        <span class="at">sep =</span> <span class="st">"</span><span class="sc">\t</span><span class="st">"</span>,</span>
+<span id="cb10-49"><a href="#cb10-49" aria-hidden="true" tabindex="-1"></a>                        <span class="at">skip =</span> <span class="dv">1</span>, <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb10-50"><a href="#cb10-50" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb10-51"><a href="#cb10-51" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb10-52"><a href="#cb10-52" aria-hidden="true" tabindex="-1"></a>      data <span class="ot">&lt;-</span> <span class="fu">head</span>(data, nb_samp)</span>
+<span id="cb10-53"><a href="#cb10-53" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb10-54"><a href="#cb10-54" aria-hidden="true" tabindex="-1"></a>      y <span class="ot">&lt;-</span> data<span class="sc">$</span>Barycentre.y..mm.</span>
+<span id="cb10-55"><a href="#cb10-55" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-56"><a href="#cb10-56" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Compute the spectra</span></span>
+<span id="cb10-57"><a href="#cb10-57" aria-hidden="true" tabindex="-1"></a>      <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq</span>(<span class="dv">1</span>, nb_step<span class="sc">/</span>dratio)) {</span>
+<span id="cb10-58"><a href="#cb10-58" aria-hidden="true" tabindex="-1"></a>          t <span class="ot">&lt;-</span> i <span class="sc">*</span> dratio</span>
+<span id="cb10-59"><a href="#cb10-59" aria-hidden="true" tabindex="-1"></a>          idx <span class="ot">&lt;-</span> <span class="fu">seq</span>(t, t <span class="sc">+</span> window_size <span class="sc">-</span> <span class="dv">1</span>)</span>
+<span id="cb10-60"><a href="#cb10-60" aria-hidden="true" tabindex="-1"></a>          p <span class="ot">&lt;-</span> <span class="fu">psdcore</span>(y [idx])</span>
+<span id="cb10-61"><a href="#cb10-61" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-62"><a href="#cb10-62" aria-hidden="true" tabindex="-1"></a>          spec <span class="ot">&lt;-</span> <span class="dv">10</span> <span class="sc">*</span> <span class="fu">log10</span>(p<span class="sc">$</span>spec)</span>
+<span id="cb10-63"><a href="#cb10-63" aria-hidden="true" tabindex="-1"></a>          spectra [i, ] <span class="ot">&lt;-</span> spec [initial_idx <span class="sc">:</span> final_idx]</span>
+<span id="cb10-64"><a href="#cb10-64" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb10-65"><a href="#cb10-65" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb10-66"><a href="#cb10-66" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Extract trial result in a list  </span></span>
+<span id="cb10-67"><a href="#cb10-67" aria-hidden="true" tabindex="-1"></a>    rspec [[subject]] [[trial]] <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">spectra =</span> spectra)</span>
+<span id="cb10-68"><a href="#cb10-68" aria-hidden="true" tabindex="-1"></a>}}</span>
+<span id="cb10-69"><a href="#cb10-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-70"><a href="#cb10-70" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span> (rspec, <span class="at">file =</span> <span class="fu">file.path</span> (data_dir, <span class="st">"rspec.dat"</span>))</span>
+<span id="cb10-71"><a href="#cb10-71" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] rspec.dat already exists, loading it from save...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\r</span><span class="st"> Done computing spectra ! </span><span class="sc">\n</span><span class="st"> Saved in data/rspec.dat"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ Done computing spectra ! 
+ Saved in data/rspec.dat</code></pre>
+</div>
+</div>
+</section>
+<section id="computing-energy-ratios" class="level2">
+<h2 class="anchored" data-anchor-id="computing-energy-ratios">Computing Energy Ratios</h2>
+<p>Setting the time and frequency bands of interest for the computing of energy ratios :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Setting the two frequency bands</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>bf <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">7</span>) <span class="co"># get the columns corresponding</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co">#to the 0.1 to 0.7 Hz range</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>hf <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">7</span><span class="sc">:</span><span class="dv">13</span>) <span class="co"># get the columns corresponding</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co">#to the 0.7 to 1.3 Hz range</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Setting the five time windows</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>t1 <span class="ot">&lt;-</span> <span class="fu">c</span>((<span class="dv">5000</span><span class="sc">/</span>dratio)<span class="sc">:</span>(<span class="dv">6000</span><span class="sc">/</span>dratio)) <span class="co"># get the rows corresponding</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co">#to the 50s to 60 sec range</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>t2 <span class="ot">&lt;-</span> <span class="fu">c</span>((<span class="dv">6000</span><span class="sc">/</span>dratio)<span class="sc">:</span>(<span class="dv">7000</span><span class="sc">/</span>dratio)) <span class="co"># get the rows corresponding</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co">#to the 60s to 70 sec range</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>t3 <span class="ot">&lt;-</span> <span class="fu">c</span>((<span class="dv">11000</span><span class="sc">/</span>dratio)<span class="sc">:</span>(<span class="dv">12000</span><span class="sc">/</span>dratio)) <span class="co"># get the rows corresponding</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a><span class="co">#to the 110s to 120 sec range</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>t4 <span class="ot">&lt;-</span> <span class="fu">c</span>((<span class="dv">12000</span><span class="sc">/</span>dratio)<span class="sc">:</span>(<span class="dv">13000</span><span class="sc">/</span>dratio)) <span class="co"># get the rows corresponding</span></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a><span class="co">#to the 120s to 130 sec range</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>t5 <span class="ot">&lt;-</span> <span class="fu">c</span>((<span class="dv">16000</span><span class="sc">/</span>dratio)<span class="sc">:</span>(<span class="dv">17000</span><span class="sc">/</span>dratio)) <span class="co"># get the rows corresponding</span></span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a><span class="co">#to the 160s to 170 sec range</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Computing Energy ratios for each trials of each participants and extracting them from a list to make a single data frame :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Looping over each condition for all subjects</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (s <span class="cf">in</span> <span class="fu">names</span>(rspec)){</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> ( c <span class="cf">in</span> <span class="fu">names</span> (rspec [[s]])) {      </span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Get low frequency band for each time window</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>      <span class="co">#(Peterka : 0.1 - 0.7 Hz)</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>            l1 <span class="ot">&lt;-</span> rspec [[s]][[c]]<span class="sc">$</span>spectra[t1, bf]</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>            l2 <span class="ot">&lt;-</span> rspec [[s]][[c]]<span class="sc">$</span>spectra[t2, bf]</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>            l3 <span class="ot">&lt;-</span> rspec [[s]][[c]]<span class="sc">$</span>spectra[t3, bf]</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>            l4 <span class="ot">&lt;-</span> rspec [[s]][[c]]<span class="sc">$</span>spectra[t4, bf]</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>            l5 <span class="ot">&lt;-</span> rspec [[s]][[c]]<span class="sc">$</span>spectra[t5, bf]</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Get high frequency band for each time window</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>      <span class="co">#(Peterka : 0.7 - 1.3 Hz)</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>            h1 <span class="ot">&lt;-</span> rspec [[s]][[c]]<span class="sc">$</span>spectra[t1, hf]</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>            h2 <span class="ot">&lt;-</span> rspec [[s]][[c]]<span class="sc">$</span>spectra[t2, hf]</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>            h3 <span class="ot">&lt;-</span> rspec [[s]][[c]]<span class="sc">$</span>spectra[t3, hf]</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>            h4 <span class="ot">&lt;-</span> rspec [[s]][[c]]<span class="sc">$</span>spectra[t4, hf]</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>            h5 <span class="ot">&lt;-</span> rspec [[s]][[c]]<span class="sc">$</span>spectra[t5, hf]</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>            <span class="co">#Compute Energy Ratio</span></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>            er1<span class="ot">=</span>(<span class="fu">sum</span>(h1)<span class="sc">/</span><span class="fu">sum</span>(l1))</span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>            er2<span class="ot">=</span>(<span class="fu">sum</span>(h2)<span class="sc">/</span><span class="fu">sum</span>(l2))</span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>            er3<span class="ot">=</span>(<span class="fu">sum</span>(h3)<span class="sc">/</span><span class="fu">sum</span>(l3)) </span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>            er4<span class="ot">=</span>(<span class="fu">sum</span>(h4)<span class="sc">/</span><span class="fu">sum</span>(l4))</span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>            er5<span class="ot">=</span>(<span class="fu">sum</span>(h5)<span class="sc">/</span><span class="fu">sum</span>(l5))</span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>            <span class="co">#Create a list with only these bands and energy ratios</span></span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a>            rsptat [[s]] [[c]]<span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a>              <span class="at">h1 =</span> h1, <span class="co"># High frequencies over each time windows</span></span>
+<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a>              <span class="at">h2 =</span> h2,</span>
+<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a>              <span class="at">h3 =</span> h3,</span>
+<span id="cb15-36"><a href="#cb15-36" aria-hidden="true" tabindex="-1"></a>              <span class="at">h4 =</span> h4,</span>
+<span id="cb15-37"><a href="#cb15-37" aria-hidden="true" tabindex="-1"></a>              <span class="at">h5 =</span> h5,</span>
+<span id="cb15-38"><a href="#cb15-38" aria-hidden="true" tabindex="-1"></a>              <span class="at">l1 =</span> l1, <span class="co"># Low frequencies over each time windows</span></span>
+<span id="cb15-39"><a href="#cb15-39" aria-hidden="true" tabindex="-1"></a>              <span class="at">l2 =</span> l2,</span>
+<span id="cb15-40"><a href="#cb15-40" aria-hidden="true" tabindex="-1"></a>              <span class="at">l3 =</span> l3,</span>
+<span id="cb15-41"><a href="#cb15-41" aria-hidden="true" tabindex="-1"></a>              <span class="at">l4 =</span> l4,</span>
+<span id="cb15-42"><a href="#cb15-42" aria-hidden="true" tabindex="-1"></a>              <span class="at">l5 =</span> l5,</span>
+<span id="cb15-43"><a href="#cb15-43" aria-hidden="true" tabindex="-1"></a>              <span class="at">er1 =</span> er1, <span class="co"># Energy ratio over each time windows</span></span>
+<span id="cb15-44"><a href="#cb15-44" aria-hidden="true" tabindex="-1"></a>              <span class="at">er2 =</span> er2,</span>
+<span id="cb15-45"><a href="#cb15-45" aria-hidden="true" tabindex="-1"></a>              <span class="at">er3 =</span> er3,</span>
+<span id="cb15-46"><a href="#cb15-46" aria-hidden="true" tabindex="-1"></a>              <span class="at">er4 =</span> er4,</span>
+<span id="cb15-47"><a href="#cb15-47" aria-hidden="true" tabindex="-1"></a>              <span class="at">er5 =</span> er5,</span>
+<span id="cb15-48"><a href="#cb15-48" aria-hidden="true" tabindex="-1"></a>              <span class="at">er2_er1 =</span> er2<span class="sc">-</span>er1,</span>
+<span id="cb15-49"><a href="#cb15-49" aria-hidden="true" tabindex="-1"></a>              <span class="at">er4_er3 =</span> er4<span class="sc">-</span>er3,</span>
+<span id="cb15-50"><a href="#cb15-50" aria-hidden="true" tabindex="-1"></a>              <span class="at">carsick =</span> subj_quest<span class="sc">$</span>CarSick[subj_quest<span class="sc">$</span>Id <span class="sc">==</span> s],</span>
+<span id="cb15-51"><a href="#cb15-51" aria-hidden="true" tabindex="-1"></a>              <span class="at">age =</span> subj_quest<span class="sc">$</span>Age[subj_quest<span class="sc">$</span>Id <span class="sc">==</span> s],</span>
+<span id="cb15-52"><a href="#cb15-52" aria-hidden="true" tabindex="-1"></a>              <span class="at">sexe =</span> subj_quest<span class="sc">$</span>Sexe[subj_quest<span class="sc">$</span>Id <span class="sc">==</span> s],</span>
+<span id="cb15-53"><a href="#cb15-53" aria-hidden="true" tabindex="-1"></a>              <span class="at">height =</span> subj_quest<span class="sc">$</span>Height[subj_quest<span class="sc">$</span>Id <span class="sc">==</span> s],</span>
+<span id="cb15-54"><a href="#cb15-54" aria-hidden="true" tabindex="-1"></a>              <span class="at">weight =</span> subj_quest<span class="sc">$</span>weight[subj_quest<span class="sc">$</span>Id <span class="sc">==</span> s],</span>
+<span id="cb15-55"><a href="#cb15-55" aria-hidden="true" tabindex="-1"></a>              <span class="at">validity =</span> subj_quest<span class="sc">$</span>isvalid[subj_quest<span class="sc">$</span>Id <span class="sc">==</span> s])</span>
+<span id="cb15-56"><a href="#cb15-56" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb15-57"><a href="#cb15-57" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb15-58"><a href="#cb15-58" aria-hidden="true" tabindex="-1"></a>    }}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (s <span class="cf">in</span> <span class="fu">names</span> (rsptat))</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Loop over vision conditions</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (c <span class="cf">in</span> <span class="fu">names</span> (rsptat [[s]]))</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Loop over SR conditions</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>        {</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>            datatemp <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>              <span class="at">subject =</span> s, </span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>              <span class="at">condition =</span> c,</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>              <span class="at">er1 =</span> rsptat [[s]] [[c]]<span class="sc">$</span>er1,</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>              <span class="at">er2 =</span> rsptat [[s]] [[c]]<span class="sc">$</span>er2,</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>              <span class="at">er3 =</span> rsptat [[s]] [[c]]<span class="sc">$</span>er3,</span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>              <span class="at">er4 =</span> rsptat [[s]] [[c]]<span class="sc">$</span>er4,</span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>              <span class="at">er5 =</span> rsptat [[s]] [[c]]<span class="sc">$</span>er5,</span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>              <span class="at">er2_er1 =</span> rsptat [[s]] [[c]]<span class="sc">$</span>er2_er1,</span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>              <span class="at">er4_er3 =</span> rsptat [[s]] [[c]]<span class="sc">$</span>er4_er3,</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>              <span class="at">carsick =</span> rsptat [[s]] [[c]]<span class="sc">$</span>carsick,</span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>              <span class="at">age =</span> rsptat [[s]] [[c]]<span class="sc">$</span>age,</span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>              <span class="at">sexe =</span> rsptat [[s]] [[c]]<span class="sc">$</span>sexe,</span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>              <span class="at">height =</span> rsptat [[s]] [[c]]<span class="sc">$</span>height,</span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>              <span class="at">weight =</span> rsptat [[s]] [[c]]<span class="sc">$</span>weight,</span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>              <span class="at">validity =</span> rsptat [[s]] [[c]]<span class="sc">$</span>validity)</span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a>             datastat <span class="ot">&lt;-</span> <span class="fu">rbind</span>(datastat,datatemp)            </span>
+<span id="cb16-27"><a href="#cb16-27" aria-hidden="true" tabindex="-1"></a>        }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Reformatting the dataframe by averaging ERs for every trials succeeded by each participants :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>datamean  <span class="ot">&lt;-</span>  <span class="fu">aggregate</span>(<span class="fu">list</span>(</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>                           <span class="at">er1 =</span> datastat<span class="sc">$</span>er1,</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>                           <span class="at">er2 =</span> datastat<span class="sc">$</span>er2,</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>                           <span class="at">er3 =</span> datastat<span class="sc">$</span>er3,</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>                           <span class="at">er4 =</span> datastat<span class="sc">$</span>er4,</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>                           <span class="at">er5 =</span> datastat<span class="sc">$</span>er5,</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>                           <span class="at">er2_er1 =</span> datastat<span class="sc">$</span>er2_er1,</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>                           <span class="at">er4_er3 =</span> datastat<span class="sc">$</span>er4_er3,</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>                           <span class="at">carsick =</span> datastat<span class="sc">$</span>carsick,</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>                           <span class="at">age=</span> datastat<span class="sc">$</span>age,</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>                           <span class="at">weight =</span> datastat<span class="sc">$</span>weight,</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>                           <span class="at">validity =</span> datastat<span class="sc">$</span>validity</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>                           ),</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>                        <span class="at">by =</span> <span class="fu">list</span>(<span class="at">subject =</span> datastat<span class="sc">$</span>subject),</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>                        <span class="at">FUN =</span> mean)</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(subj_quest)[<span class="fu">names</span>(subj_quest) <span class="sc">==</span> <span class="st">'Id'</span>] <span class="ot">&lt;-</span> <span class="st">"subject"</span></span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>sexe <span class="ot">&lt;-</span> subj_quest[,<span class="fu">c</span>(<span class="st">"subject"</span>,<span class="st">"Sexe"</span>)]</span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>datamean <span class="ot">&lt;-</span> <span class="fu">merge</span>(datamean,sexe,<span class="at">by=</span><span class="st">"subject"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="car-sickness-quartiles-computation" class="level2">
+<h2 class="anchored" data-anchor-id="car-sickness-quartiles-computation">Car sickness quartiles computation</h2>
+<p>Computing quartiles values for the car sickness score and adding quartile categorization in the dataframe :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Extracting q1 and q3 (quartiles) values for car sickness</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>q1 <span class="ot">&lt;-</span> <span class="fu">quantile</span>(datamean<span class="sc">$</span>carsick, <span class="fl">0.25</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>q3 <span class="ot">&lt;-</span> <span class="fu">quantile</span>(datamean<span class="sc">$</span>carsick, <span class="fl">0.75</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>datamean <span class="ot">&lt;-</span> datamean <span class="sc">%&gt;%</span> </span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">carsick_quart =</span> </span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ifelse</span>(datamean<span class="sc">$</span>carsick <span class="sc">&lt;</span> q1,<span class="sc">-</span><span class="dv">1</span>,</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ifelse</span>(datamean<span class="sc">$</span>carsick <span class="sc">&gt;</span> q3, <span class="dv">1</span>, <span class="dv">0</span>)),</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">.after =</span> validity)     </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="saving-and-displaying-the-final-dataframe" class="level2">
+<h2 class="anchored" data-anchor-id="saving-and-displaying-the-final-dataframe">Saving and displaying the final dataframe</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write_xlsx</span>(datamean,<span class="st">"datamean.xlsx"</span>)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">paged_table</span>(datamean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["subject"],"name":[1],"type":["chr"],"align":["left"]},{"label":["er1"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["er2"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["er3"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["er4"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["er5"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["er2_er1"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["er4_er3"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["carsick"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["age"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["weight"],"name":[11],"type":["dbl"],"align":["right"]},{"label":["validity"],"name":[12],"type":["dbl"],"align":["right"]},{"label":["carsick_quart"],"name":[13],"type":["dbl"],"align":["right"]},{"label":["Sexe"],"name":[14],"type":["chr"],"align":["left"]}],"data":[{"1":"s01","2":"0.8202930","3":"0.8109789","4":"0.7867527","5":"0.8299240","6":"0.7222322","7":"-0.009314081","8":"0.0431713741","9":"3","10":"25","11":"68.074","12":"3","13":"0","14":"Woman"},{"1":"s02","2":"0.8962651","3":"0.8222938","4":"0.9876240","5":"1.0206261","6":"0.9588448","7":"-0.073971222","8":"0.0330020259","9":"9","10":"22","11":"59.493","12":"3","13":"0","14":"Man"},{"1":"s03","2":"0.7520697","3":"0.7928917","4":"0.8652130","5":"0.8505162","6":"0.8576310","7":"0.040821997","8":"-0.0146968388","9":"8","10":"26","11":"68.612","12":"3","13":"0","14":"Man"},{"1":"s04","2":"0.8961733","3":"0.7815953","4":"0.9599965","5":"0.8725335","6":"0.7246893","7":"-0.114577913","8":"-0.0874630289","9":"13","10":"18","11":"62.189","12":"2","13":"1","14":"Woman"},{"1":"s05","2":"0.7560011","3":"0.7798180","4":"0.8658168","5":"0.8636800","6":"0.6733806","7":"0.023816894","8":"-0.0021367220","9":"0","10":"20","11":"53.393","12":"3","13":"-1","14":"Man"},{"1":"s06","2":"0.7743704","3":"0.7494451","4":"0.7762878","5":"0.8641669","6":"0.5074168","7":"-0.024925236","8":"0.0878791083","9":"13","10":"18","11":"58.307","12":"3","13":"1","14":"Woman"},{"1":"s07","2":"0.7984542","3":"0.8119502","4":"0.8056131","5":"0.8272041","6":"0.8285639","7":"0.013496051","8":"0.0215910539","9":"10","10":"20","11":"59.438","12":"3","13":"0","14":"Woman"},{"1":"s09","2":"0.9406298","3":"0.8873289","4":"0.9681045","5":"0.9266173","6":"0.7703139","7":"-0.053300833","8":"-0.0414871977","9":"2","10":"22","11":"59.922","12":"3","13":"0","14":"Man"},{"1":"s10","2":"0.8444215","3":"0.8571450","4":"1.0172799","5":"0.9214178","6":"0.7988679","7":"0.012723509","8":"-0.0958621290","9":"15","10":"23","11":"66.896","12":"3","13":"1","14":"Woman"},{"1":"s11","2":"0.8887962","3":"0.8491474","4":"0.8903863","5":"0.9080116","6":"0.8805992","7":"-0.039648770","8":"0.0176253139","9":"12","10":"26","11":"59.517","12":"3","13":"1","14":"Woman"},{"1":"s12","2":"0.8465927","3":"0.8843786","4":"0.8486950","5":"0.9203570","6":"0.8542804","7":"0.037785928","8":"0.0716619962","9":"0","10":"19","11":"57.990","12":"3","13":"-1","14":"Man"},{"1":"s13","2":"0.8019841","3":"0.8576184","4":"0.8679591","5":"0.8852186","6":"0.6552010","7":"0.055634382","8":"0.0172595035","9":"1","10":"19","11":"55.265","12":"3","13":"-1","14":"Woman"},{"1":"s14","2":"0.8045559","3":"0.8345205","4":"0.8889820","5":"0.8894484","6":"0.7819893","7":"0.029964599","8":"0.0004664112","9":"6","10":"19","11":"56.886","12":"3","13":"0","14":"Woman"},{"1":"s15","2":"0.8885701","3":"0.9245175","4":"0.9069733","5":"0.9935956","6":"0.9096077","7":"0.035947387","8":"0.0866223056","9":"9","10":"22","11":"56.421","12":"3","13":"0","14":"Man"},{"1":"s16","2":"0.7797982","3":"0.7846660","4":"0.8440924","5":"0.7960129","6":"0.7474937","7":"0.004867795","8":"-0.0480794936","9":"0","10":"18","11":"53.932","12":"3","13":"-1","14":"Woman"},{"1":"s18","2":"0.8769060","3":"0.9052846","4":"0.8942632","5":"0.9395891","6":"0.7835939","7":"0.028378614","8":"0.0453258933","9":"10","10":"19","11":"56.530","12":"3","13":"0","14":"Woman"},{"1":"s19","2":"0.7745447","3":"0.7867296","4":"0.8831930","5":"0.8957795","6":"0.8114132","7":"0.012184852","8":"0.0125865040","9":"8","10":"18","11":"54.416","12":"3","13":"0","14":"Woman"},{"1":"s20","2":"0.7562357","3":"0.7891142","4":"0.7567882","5":"0.7065503","6":"0.5961868","7":"0.032878449","8":"-0.0502378586","9":"11","10":"20","11":"56.562","12":"3","13":"1","14":"Woman"},{"1":"s22","2":"0.7380275","3":"0.8212587","4":"0.8911012","5":"0.8915301","6":"0.7501257","7":"0.083231203","8":"0.0004288469","9":"10","10":"19","11":"72.482","12":"2","13":"0","14":"Woman"},{"1":"s23","2":"0.8962827","3":"0.9471955","4":"0.8764037","5":"0.8916574","6":"0.7938330","7":"0.050912755","8":"0.0152536748","9":"3","10":"22","11":"47.777","12":"3","13":"0","14":"Man"},{"1":"s24","2":"0.7554180","3":"0.8362272","4":"0.8461814","5":"0.8223590","6":"0.6718678","7":"0.080809222","8":"-0.0238223998","9":"11","10":"18","11":"52.574","12":"3","13":"1","14":"Woman"},{"1":"s25","2":"0.8771558","3":"0.8287349","4":"0.9793379","5":"0.9230457","6":"0.9191229","7":"-0.048420923","8":"-0.0562921238","9":"6","10":"19","11":"77.827","12":"1","13":"0","14":"Man"},{"1":"s26","2":"0.7839386","3":"0.8255300","4":"0.8694073","5":"0.9077968","6":"0.8991537","7":"0.041591355","8":"0.0383894339","9":"3","10":"18","11":"67.403","12":"2","13":"0","14":"Woman"},{"1":"s27","2":"0.9468706","3":"0.9603405","4":"0.9412482","5":"0.8990036","6":"0.9002082","7":"0.013469928","8":"-0.0422446313","9":"8","10":"19","11":"65.170","12":"3","13":"0","14":"Woman"},{"1":"s28","2":"0.9115602","3":"0.9557557","4":"0.8666460","5":"0.7815065","6":"0.6952440","7":"0.044195451","8":"-0.0851394880","9":"6","10":"18","11":"52.003","12":"3","13":"0","14":"Woman"},{"1":"s29","2":"0.8309898","3":"0.8576082","4":"0.7978245","5":"0.7527928","6":"0.5732317","7":"0.026618367","8":"-0.0450316420","9":"9","10":"18","11":"55.788","12":"2","13":"0","14":"Man"},{"1":"s30","2":"0.8257207","3":"0.8679770","4":"0.8502379","5":"0.8794853","6":"0.8114940","7":"0.042256310","8":"0.0292473851","9":"0","10":"19","11":"45.689","12":"3","13":"-1","14":"Woman"},{"1":"s31","2":"0.8639304","3":"0.8941697","4":"0.7876338","5":"0.8225138","6":"0.6256228","7":"0.030239385","8":"0.0348799409","9":"0","10":"28","11":"64.012","12":"3","13":"-1","14":"Man"},{"1":"s32","2":"0.7727291","3":"0.7967673","4":"0.8202450","5":"0.8716245","6":"0.7190704","7":"0.024038208","8":"0.0513794327","9":"10","10":"19","11":"52.782","12":"3","13":"0","14":"Man"},{"1":"s33","2":"0.8670823","3":"0.8032659","4":"0.7916936","5":"0.7718126","6":"0.6581683","7":"-0.063816398","8":"-0.0198809813","9":"0","10":"21","11":"60.734","12":"2","13":"-1","14":"Woman"},{"1":"s34","2":"0.8377049","3":"0.8629375","4":"0.8941346","5":"0.8668655","6":"0.6698799","7":"0.025232531","8":"-0.0272690898","9":"15","10":"20","11":"55.716","12":"3","13":"1","14":"Woman"},{"1":"s36","2":"0.8353404","3":"0.9200509","4":"0.8940744","5":"0.8496813","6":"0.5928612","7":"0.084710510","8":"-0.0443931357","9":"7","10":"20","11":"67.565","12":"1","13":"0","14":"Man"},{"1":"s37","2":"0.8650216","3":"0.8422356","4":"0.8039617","5":"0.9763969","6":"0.7780545","7":"-0.022786029","8":"0.1724352400","9":"5","10":"19","11":"51.169","12":"3","13":"0","14":"Woman"},{"1":"s39","2":"0.8368940","3":"0.8281110","4":"0.8297041","5":"0.8379863","6":"0.7473078","7":"-0.008783068","8":"0.0082821546","9":"4","10":"22","11":"64.658","12":"2","13":"0","14":"Man"},{"1":"s40","2":"0.7322953","3":"0.7874740","4":"0.8661941","5":"1.0251847","6":"0.9339209","7":"0.055178750","8":"0.1589906328","9":"0","10":"19","11":"63.935","12":"3","13":"-1","14":"Man"},{"1":"s41","2":"0.9149502","3":"0.9511062","4":"0.9598138","5":"1.0062601","6":"0.9281496","7":"0.036155971","8":"0.0464462539","9":"9","10":"18","11":"63.800","12":"1","13":"0","14":"Woman"},{"1":"s42","2":"0.7603676","3":"0.7699564","4":"0.8350529","5":"0.7673039","6":"0.6889764","7":"0.009588735","8":"-0.0677490554","9":"0","10":"21","11":"49.682","12":"3","13":"-1","14":"Man"},{"1":"s43","2":"0.8657291","3":"0.8789072","4":"0.8698817","5":"0.9125386","6":"0.8110850","7":"0.013178153","8":"0.0426569374","9":"13","10":"20","11":"53.046","12":"3","13":"1","14":"Woman"},{"1":"s44","2":"0.8682716","3":"0.8105889","4":"0.9141301","5":"0.9863151","6":"0.9328711","7":"-0.057682636","8":"0.0721850266","9":"4","10":"19","11":"68.587","12":"3","13":"0","14":"Man"},{"1":"s45","2":"0.8063716","3":"0.8416161","4":"0.8535044","5":"0.7068055","6":"0.7239418","7":"0.035244463","8":"-0.1466988676","9":"7","10":"20","11":"56.547","12":"3","13":"0","14":"Woman"},{"1":"s46","2":"0.9148530","3":"0.9316407","4":"0.8763775","5":"0.9032567","6":"0.8261298","7":"0.016787723","8":"0.0268792075","9":"4","10":"20","11":"52.181","12":"3","13":"0","14":"Woman"},{"1":"s47","2":"0.9101569","3":"0.8620976","4":"0.8804123","5":"0.9138930","6":"0.6852838","7":"-0.048059305","8":"0.0334807401","9":"10","10":"22","11":"55.214","12":"3","13":"0","14":"Woman"},{"1":"s48","2":"0.9092662","3":"0.8109039","4":"0.9045153","5":"1.0784376","6":"0.8216228","7":"-0.098362291","8":"0.1739223546","9":"0","10":"19","11":"63.580","12":"3","13":"-1","14":"Woman"},{"1":"s49","2":"0.8746388","3":"0.9121204","4":"0.9155201","5":"0.8140749","6":"0.7510997","7":"0.037481553","8":"-0.1014451765","9":"10","10":"19","11":"72.796","12":"3","13":"0","14":"Man"},{"1":"s50","2":"0.9257195","3":"0.9189768","4":"0.8946550","5":"0.9194791","6":"0.7989955","7":"-0.006742673","8":"0.0248241599","9":"8","10":"19","11":"62.598","12":"3","13":"0","14":"Woman"},{"1":"s51","2":"0.8887214","3":"0.8620493","4":"0.9207932","5":"0.7874123","6":"0.7594277","7":"-0.026672102","8":"-0.1333808582","9":"12","10":"19","11":"66.252","12":"3","13":"1","14":"Woman"},{"1":"s52","2":"0.8150222","3":"0.8291709","4":"0.8158592","5":"0.8480922","6":"0.6729407","7":"0.014148731","8":"0.0322330494","9":"4","10":"23","11":"58.534","12":"3","13":"0","14":"Woman"},{"1":"s53","2":"0.8053528","3":"0.8500499","4":"0.9032469","5":"0.9533994","6":"0.8031836","7":"0.044697062","8":"0.0501525131","9":"1","10":"19","11":"53.040","12":"3","13":"-1","14":"Woman"},{"1":"s54","2":"0.8982942","3":"0.8214126","4":"0.9145032","5":"0.9198731","6":"0.6580959","7":"-0.076881547","8":"0.0053699236","9":"11","10":"20","11":"52.618","12":"3","13":"1","14":"Woman"},{"1":"s55","2":"0.8577905","3":"0.8827633","4":"0.8839329","5":"0.9200804","6":"0.8460666","7":"0.024972805","8":"0.0361474818","9":"0","10":"20","11":"73.513","12":"3","13":"-1","14":"Man"},{"1":"s56","2":"0.7563254","3":"0.7762044","4":"0.7870187","5":"0.7388662","6":"0.8100621","7":"0.019878950","8":"-0.0481524836","9":"2","10":"19","11":"55.162","12":"3","13":"0","14":"Woman"},{"1":"s57","2":"0.8914763","3":"0.9283222","4":"0.8538624","5":"0.9514325","6":"0.7551282","7":"0.036845953","8":"0.0975701012","9":"2","10":"28","11":"70.415","12":"1","13":"0","14":"Man"},{"1":"s58","2":"0.7378466","3":"0.8569377","4":"0.8266392","5":"0.8236225","6":"0.7714877","7":"0.119091080","8":"-0.0030166980","9":"10","10":"24","11":"76.301","12":"1","13":"0","14":"Man"},{"1":"s59","2":"0.7805382","3":"0.8996393","4":"0.9316315","5":"0.8370630","6":"0.7585449","7":"0.119101101","8":"-0.0945684804","9":"12","10":"28","11":"70.663","12":"2","13":"1","14":"Man"},{"1":"s61","2":"0.8067518","3":"0.8226601","4":"0.8419195","5":"1.0243638","6":"0.8309528","7":"0.015908332","8":"0.1824443477","9":"0","10":"19","11":"83.570","12":"3","13":"-1","14":"Man"},{"1":"s62","2":"0.8194402","3":"0.8378050","4":"0.8733197","5":"0.9183852","6":"0.8285190","7":"0.018364732","8":"0.0450654677","9":"3","10":"30","11":"78.990","12":"3","13":"0","14":"Man"},{"1":"s63","2":"0.8971444","3":"0.8631288","4":"0.8772601","5":"0.8018328","6":"0.8004749","7":"-0.034015615","8":"-0.0754273610","9":"8","10":"21","11":"66.043","12":"2","13":"0","14":"Man"},{"1":"s64","2":"0.8299011","3":"0.8706361","4":"0.7997270","5":"0.8511893","6":"0.7364289","7":"0.040734915","8":"0.0514622721","9":"0","10":"19","11":"57.197","12":"3","13":"-1","14":"Woman"},{"1":"s65","2":"0.8473019","3":"0.7797792","4":"0.9193927","5":"0.9052188","6":"0.8584734","7":"-0.067522729","8":"-0.0141738940","9":"0","10":"20","11":"48.974","12":"2","13":"-1","14":"Woman"},{"1":"s66","2":"0.8185484","3":"0.8348150","4":"0.7542522","5":"0.8355547","6":"0.7306401","7":"0.016266566","8":"0.0813025219","9":"10","10":"21","11":"76.394","12":"2","13":"0","14":"Man"},{"1":"s68","2":"0.8380059","3":"0.8427251","4":"0.9163878","5":"0.9192424","6":"0.8120491","7":"0.004719227","8":"0.0028546363","9":"0","10":"19","11":"60.285","12":"2","13":"-1","14":"Man"},{"1":"s69","2":"0.8694707","3":"0.8736619","4":"0.8719015","5":"0.8712631","6":"0.7076087","7":"0.004191148","8":"-0.0006384194","9":"4","10":"23","11":"67.975","12":"1","13":"0","14":"Man"},{"1":"s70","2":"0.9488437","3":"0.8938420","4":"0.9287635","5":"1.0322362","6":"0.9784598","7":"-0.055001764","8":"0.1034727139","9":"8","10":"25","11":"75.212","12":"3","13":"0","14":"Man"},{"1":"s71","2":"0.8759320","3":"0.9012454","4":"0.9199083","5":"0.9290750","6":"0.7021522","7":"0.025313421","8":"0.0091666076","9":"9","10":"26","11":"55.243","12":"2","13":"0","14":"Woman"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+    } else {
+      disableStylesheet(alternateStylesheets);
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } 
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
